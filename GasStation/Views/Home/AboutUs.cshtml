@@ -1,0 +1,125 @@
+﻿@{
+    ViewData["Title"] = "О Нас";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width = divice - width" />
+    <title>Сеть автозаправок Форсаж</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/AboutUs.css">
+
+</head>
+
+
+<body>
+    <script>src = "~/lib/jquery/dist/jquery.js"</script>
+    <script src="~/js/mainpage.js"></script>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a asp-action="Index">
+                    <img src="~/img/Logo.jpg" alt="logo">
+                </a>
+            </div>
+            <nav role="navigation">
+                <ul class="mainmenu">
+                    <li><a asp-action="Index">Домой</a></li>
+                    <li><a asp-action="Stocks">Акции</a></li>
+                    <li><a asp-action="Vacancies">Вакансии</a></li>
+                    <li><a asp-action="Contacts">Контакты</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="information">
+            <div class="info">
+                <div>
+                    <h3>АЗС «Форсаж»</h3>
+                </div>
+                <div>
+                    <p>Приветствуем на нашем сайте!</p>
+                    <p>АЗС под брендом «Форсаж» сегодня уже начали свою деятельность в 21 областях и насчитывают 140 объектов в городах и на дорогах Украины.</p>
+                    <p>Мы молоды и амбициозны, и только начинаем свой путь, но, понимая потребности нашего клиента, активно работаем в направлении предоставления качественного продукта по доступной цене.</p>
+                    <p>На АЗС «Форсаж» топливо только стандарта Евро 5. Покупая качественное топливо у нас Вы экономите свои средства, не переплачивая за качество. Заправляясь у нас, Вы быстро убедитесь, что сделали правильный выбор.</p>
+                    <p>Мы активно развиваемся в сегменте сервиса и услуг. Уже сегодня почти на всех наших АЗС Вы можете наслаждаться хрустящими хот-догами и ароматным кофе, а также приобрести в магазине АЗС необходимые товары в дорогу. В ближайшее время услуги кафе и магазина будут доступны по всей сети АЗС «Форсаж».</p>
+                    <p>Ждем Вас на наших АЗС «Форсаж»! Только так Вы убедитесь в качестве горючего!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="weInMap">
+            <div class="wemap">
+                <div>
+                    <h3>МЫ НА КАРТЕ</h3>
+                </div>
+                <div id="map">
+
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer class="footer text-center">
+        <div class="container">
+            <a href="https://www.facebook.com/Microsoft/">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/microsoft">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/microsoft">
+                <i class="fa fa-youtube"></i>
+            </a>
+        </div>
+
+        <div class="footer-coppyright">
+            Andrew Chernenko
+        </div>
+    </footer>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = { lat: 50.015071, lng: 36.3210113 };
+            var uluru1 = { lat: 49.95663, lng: 36.3610203 };
+            var uluru2 = { lat: 49.094575, lng: 33.4496723 };
+
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 6, center: uluru2 });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({ position: uluru, map: map });
+            var marker1 = new google.maps.Marker({ position: uluru1, map: map });
+            var marker2 = new google.maps.Marker({ position: uluru2, map: map });
+
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChgFKEp9e9qw744k2setxKDLA_dqbTYY8&callback=initMap">
+    </script>
+
+
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Акции";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width = divice - width" />
+    <title>Сеть автозаправок Форсаж</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/Stocks.css">
+
+</head>
+
+
+<body>
+    <script>src = "~/lib/jquery/dist/jquery.js"</script>
+    <script src="~/js/mainpage.js"></script>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a asp-action="Index">
+                    <img src="~/img/Logo.jpg" alt="logo">
+                </a>
+            </div>
+            <nav role="navigation">
+                <ul class="mainmenu">
+                    <li><a asp-action="Index">Домой</a></li>
+                    <li><a asp-action="Vacancies">Вакансии</a></li>
+                    <li><a asp-action="Contacts">Контакты</a></li>
+                    <li><a asp-action="AboutUs">О Нас</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="stocks">
+            <div class="stocks-info">
+                <div>
+                    <h3>Не упусти свой шанс приобрести топливо по акции!</h3>
+                </div>
+                <div class="stocks-name">
+                    <h3>Акция «Зимний марафон»</h3>
+                </div>
+                <div class="img">
+                    <img src="~/img/Stocks1.jpg">
+                </div>
+                <div class="description">
+                    <h3>АЗС «Форсаж» дарит дополнительную скидку:</h3>
+                </div>
+                <ul>
+                    <li> 2 грн / л от 20 л 95 / 95Евро / 92;</li>
+                    <li>1,5 грн / л от 15 л  ДП / Газ</li>
+                    <li>3 грн / л от 50 л на ДТ</li>
+                </ul>
+                <br>
+                <p>Акция действует с 25.01.2020 по 25.02.2020</p>
+                <br>
+                <div class="stocks-name">
+                    <h3>Акция «1+1=3»</h3>
+                </div>
+                <div class="img">
+                    <img src="~/img/Stocks2.jpg">
+                </div>
+                <div class="description">
+                    <h3>АЗС «Форсаж» приглашает Вас принять участие в акции 1 + 1 = 3. Покупая два товара, третий Вы получите в подарок:</h3>
+                </div>
+                <ul>
+                    <li>Покупай два кофе и получи в подарок печенье</li>
+                    <li>Покупай два Хот-Дога и получи в подарок Пепси</li>
+                    <li>Покупай два чая и получи в подарок вафли</li>
+                    <li>Покупай две Минни-пиццы и получи в подарок чипсы</li>
+                </ul>
+                <br>
+                <p>Акция действует с 17.01.2020 по 08.03.2020</p>
+                <br>
+                <div class="stocks-name">
+                    <h3>Акция «Топливо в подарок»</h3>
+                </div>
+                <div class="img">
+                    <img src="~/img/Stocks3.jpg">
+                </div>
+                <div class="description">
+                    <h3>АЗС «Форсаж» дарит дополнительно топливо:</h3>
+                </div>
+                    <ul>
+                        <li>1л за покупку 30л 95/ 95Евро/ 92</li>
+                        <li>0.5л за покупку 25л ДП/ Газ </li>
+                        <li>2л за покупку 100л ДП</li>
+                    </ul>
+                <br>
+                <p>Акция действует с 13.01.2020 по 29.01.2020</p>
+                <br>
+            </div>
+        </section>
+    </main>
+    <footer class="footer text-center">
+        <div class="container">
+            <a href="https://www.facebook.com/Microsoft/">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/microsoft">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/microsoft">
+                <i class="fa fa-youtube"></i>
+            </a>
+        </div>
+
+        <div class="footer-coppyright">
+            Andrew Chernenko
+        </div>
+    </footer>
+
+
+
+</body>
+
+
+
+</html>

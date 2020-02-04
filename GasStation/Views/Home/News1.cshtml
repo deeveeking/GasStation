@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Новости";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width = divice - width" />
+    <title>Сеть автозаправок Форсаж</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/News.css">
+
+</head>
+
+
+<body>
+    <script>src = "~/lib/jquery/dist/jquery.js"</script>
+    <script src="~/js/mainpage.js"></script>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a asp-action="Index">
+                    <img src="~/img/Logo.jpg" alt="logo">
+                </a>
+            </div>
+            <nav role="navigation">
+                <ul class="mainmenu">
+                    <li><a asp-action="Index">Домой</a></li>
+                    <li><a asp-action="Stocks">Акции</a></li>
+                    <li><a asp-action="Vacancies">Вакансии</a></li>
+                    <li><a asp-action="Contacts">Контакты</a></li>
+                    <li><a asp-action="AboutUs">О Нас</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <section class="information">
+            <div class="info">
+                <div>
+                <h3>Завершены работы по обустройству АЗС в г.Харьков</h3>
+                </div>
+                <div>
+                    <p>10 января 2020 завершены работы по обустройству торгового зала АЗС в г.Харьков .</p>
+                    <div class="img">
+                        <img src="~/img/News1.jpg">
+                    </div>
+                    <p>Установлена ​​новая мебель для кафе, согласно новому проекту наших дизайнеров и благодаря умелым мастерам производственной компании «Universal Complex», г. Киев.</p>
+                    <p>Также торговый зал украсили яркими фото, которые создают атмосферу позитива и настраивают на легкую дорогу.</p>
+                    <p>К услугам наших клиентов - продажа сопутствующих товаров, горячих и прохладительных напитков, вкусные хот-доги. Отныне на нашей АЗС можно отдохнуть с комфортом, немного поразмышлять за кофе, набраться сил для дальнейшего пути ...</p>
+                    <br>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer text-center">
+        <div class="container">
+            <a href="https://www.facebook.com/Microsoft/">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/microsoft">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/microsoft">
+                <i class="fa fa-youtube"></i>
+            </a>
+        </div>
+
+        <div class="footer-coppyright">
+            Andrew Chernenko
+        </div>
+    </footer>
+
+
+    
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,161 @@
+﻿
+
+
+@{
+    ViewData["Title"] = "Сеть автозаправок Форсаж";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width = divice - width" />
+    <title>Сеть автозаправок Форсаж</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/MainPage.css">
+
+</head>
+
+
+<body>
+
+    <script>src = "~/lib/jquery/dist/jquery.js"</script>
+    <script src="~/js/mainpage.js"></script>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+
+                <a asp-action="Index">
+
+                    <img src="~/img/Logo.jpg" alt="logo">
+
+
+                </a>
+            </div>
+
+            <nav role="navigation">
+                <ul class="mainmenu">
+                    <li><a asp-action="Stocks">Акции</a></li>
+                    <li><a asp-action="Vacancies">Вакансии</a></li>
+                    <li><a asp-action="Contacts">Контакты</a></li>
+                    <li><a asp-action="AboutUs">О Нас</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+        <section class="top-slide">
+            <div class="namegas">
+                <h2> АЗС «Форсаж» </h2>
+            </div>
+            <div class="top-container">
+
+                <div>
+                    <h2>ЛУЧШЕЕ ТОПЛИВО</h2>
+                </div>
+                <div>
+                    <h2>ВО ВСЕЙ УКРАИНЕ</h2>
+                </div>
+                <div><p>Быстрая заправка</p></div>
+                <div><p>Отличная цена</p></div>
+                <div><p>Высшее качество</p></div>
+            </div>
+
+        </section>
+
+        <section class="Fuel">
+            <div class="specialize-container">
+                <h3>ВЫБИРАЙ ЛУЧШЕЕ</h3>
+                <p> На сайте показаны средние цены на топливо в Украине, фактическая цена зависит от региона</p>
+                <div class="fuel-card">
+                    <div class="cardfuel">
+                        <div class="topcard">
+                            <a asp-action="Buy95"><img src="~/img/95euro.jpg" alt="95euro"></a>
+                            <a asp-action="Buy92"><img src="~/img/92euro.jpg" alt="92euro"></a>
+                            <a asp-action="BuyDp"><img src="~/img/dpeuro.jpg" alt="dpeuro"></a>
+                            <a asp-action="BuyGas"><img src="~/img/gas.jpg" alt="gas"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="news">
+            <div class="specialize-container-news">
+                <h3>НОВОСТИ</h3>
+                <p>Последние новости из жизни АЗС «Форсаж»</p>
+
+                <div class="news-card">
+                    <div class="cardnews">
+                        <div class="news-img">
+                            <a asp-action="News1"><img src="~/img/news1icon.jpg" alt="news"></a>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Завершены работы <br> по обустройству АЗС в г.Харьков
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cardnews">
+                        <div class="news-img">
+                            <a asp-action="News2"><img src="~/img/news2icon.jpg" alt="news"></a>
+                        </div>
+                        <div class="text">
+                            <p>
+                                АЗС Форсаж в <br> программе «Качество под контролем»
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cardnews">
+                        <div class="news-img">
+                            <a asp-action="News3"><img src="~/img/news3icon.jpg" alt="news"></a>
+                        </div>
+                        <div class="text">
+                            <p>
+                                На 10 АЗС открыта продажа <br> сопутствующих товаров
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <a href="https://www.facebook.com/Microsoft/">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/microsoft">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/microsoft">
+                <i class="fa fa-youtube"></i>
+            </a>
+        </div>
+        <div class="footer-coppyright">
+            Andrew Chernenko
+        </div>
+    </footer>
+
+
+
+</body>
+
+
+
+</html>

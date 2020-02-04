@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Новости";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width = divice - width" />
+    <title>Сеть автозаправок Форсаж</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/News.css">
+
+</head>
+
+
+<body>
+    <script>src = "~/lib/jquery/dist/jquery.js"</script>
+    <script src="~/js/mainpage.js"></script>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a asp-action="Index">
+                    <img src="~/img/Logo.jpg" alt="logo">
+                </a>
+            </div>
+            <nav role="navigation">
+                <ul class="mainmenu">
+                    <li><a asp-action="Index">Домой</a></li>
+                    <li><a asp-action="Stocks">Акции</a></li>
+                    <li><a asp-action="Vacancies">Вакансии</a></li>
+                    <li><a asp-action="Contacts">Контакты</a></li>
+                    <li><a asp-action="AboutUs">О Нас</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <section class="information">
+            <div class="info">
+                <div>
+                    <h3>На 10 АЗС продажа сопутствующих товаров открыто</h3>
+                </div>
+                <div>
+                    <p>С 1 января на 10 наших АЗС началась продажа сопутствующих товаров. Теперь наши клиенты смогут не только заправить свой автомобиль, но и немного отдохнуть, выпить ароматного кофе, съесть вкусный бургер, приобрести напитки, снеки, сладости.</p>
+                    <div class="img">
+                        <img src="~/img/News3.jpg">
+                    </div>
+                    <p>Кстати, мы используем исключительно натуральное мясо для приготовления котлет. Булочки изготавливаются по собственной рецептуре, из натуральных продуктов без ГМО, яиц и молока, муки высшего сорта. Мы отказались от использования химических ароматизаторов и усилителей вкусов.</p>
+                    <p>Но основной секрет нашего вкусного бургера - наши соусы! Барбекю - только натуральные помидоры, с ароматной композицией специй, горчица - с медом и натуральным соевым соусом, чесночный соус - чистая сметана с чесноком, при добавлении яиц и молока.</p>
+                    <p>Попробуйте - не пожалеете!</p>
+                    <br>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer text-center">
+        <div class="container">
+            <a href="https://www.facebook.com/Microsoft/">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/microsoft">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/microsoft">
+                <i class="fa fa-youtube"></i>
+            </a>
+        </div>
+
+        <div class="footer-coppyright">
+            Andrew Chernenko
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+
+
+</html>
+
+

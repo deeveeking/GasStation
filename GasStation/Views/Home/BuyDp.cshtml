@@ -1,0 +1,114 @@
+﻿@model GasStation.Models.Fuel
+
+@{
+    ViewData["Title"] = "Сеть автозаправок Форсаж";
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width = divice - width" />
+    <title>Сеть автозаправок Форсаж</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/Buy.css">
+
+</head>
+
+
+<body>
+
+    <script>src = "~/lib/jquery/dist/jquery.js"</script>
+    <script src="~/js/mainpage.js"></script>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+
+                <a asp-action="Index">
+
+                    <img src="~/img/Logo.jpg" alt="logo">
+
+
+                </a>
+            </div>
+
+            <nav role="navigation">
+                <ul class="mainmenu">
+                    <li><a asp-action="Index">Домой</a></li>
+                    <li><a asp-action="Stocks">Акции</a></li>
+                    <li><a asp-action="Vacancies">Вакансии</a></li>
+                    <li><a asp-action="Contacts">Контакты</a></li>
+                    <li><a asp-action="AboutUs">О Нас</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="Buy">
+            <div class="buyer">
+                <div>
+                    <h3> Заполните форму для покупки ДизюТоплива</h3>
+                </div>
+                <div class="form-popup">
+                    <center>
+                        <form asp-action="Edit" asp-controller="home" asp-route-id="13" class="form-container">
+                            <label>Введите фамилию</label>
+                            <input type="text" placeholder="Иванов" required>
+                            <label>Введите имя</label>
+                            <input type="text" placeholder="Иван" required>
+                            <label asp-for="Liters">Количество литров</label>
+                            <input type="number" onchange="sum(this)" placeholder="20,10..." asp-for="Liters" required>
+                            <label>Введите номер автомобиля</label>
+                            <input type="text" placeholder="AO 0000 AO" required>
+                            <label id="result">К оплате:</label>
+                            <button type="submit" onclick="openForm()" class="btn">Подтвердить покупку</button>
+                            
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer text-center">
+        <div class="container">
+            <a href="https://www.facebook.com/Microsoft/">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/microsoft">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/microsoft">
+                <i class="fa fa-youtube"></i>
+            </a>
+        </div>
+        <div class="footer-coppyright">
+            Andrew Chernenko
+        </div>
+    </footer>
+
+
+    <script>
+        function sum(o) {
+
+            var sum = 25.6 * o.value;
+            document.getElementById("result").innerHTML = "К оплате:" + sum + "грн";
+        }
+
+    </script>
+
+
+</body>
+
+
+
+</html>
+
